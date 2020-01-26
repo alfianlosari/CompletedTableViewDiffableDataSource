@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Ca-Lp-shM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Japan Vacation-->
+        <scene sceneID="JBE-LP-9fM">
+            <objects>
+                <tableViewController id="p7f-RO-GQK" customClass="CityPlaceViewController" customModule="CollectionDiffing" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YGL-cI-mbx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="p7f-RO-GQK" id="Yae-Ff-zTv"/>
+                            <outlet property="delegate" destination="p7f-RO-GQK" id="QdN-ZX-G8H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Japan Vacation" id="BV6-t9-zUi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IC4-EU-zCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="233.70535714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="92l-Dj-Rcp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Ca-Lp-shM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kVv-2Z-UWH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p7f-RO-GQK" kind="relationship" relationship="rootViewController" id="3Xh-Yg-3Jh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGi-yY-AYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-85.507246376811594" y="233.70535714285714"/>
+        </scene>
+    </scenes>
+</document>
