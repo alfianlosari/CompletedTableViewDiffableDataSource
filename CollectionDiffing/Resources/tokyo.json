@@ -1,0 +1,14 @@
+[
+    {
+    "uuid": "tokyo-shinjuku",
+    "name": "Shinjuku",
+    "description": "Shinjuku City encompasses the buzzing clubs and karaoke rooms of neon-lit East Shinjuku and upscale hotel bars and restaurants in the Skyscraper District",
+    "imageName": "shinjuku"
+    },
+    {
+    "uuid": "tokyo-shibuya",
+    "name": "Shibuya",
+    "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial and business centre, it houses the two busiest railway stations in the world, Shinjuku Station and Shibuya Station",
+    "imageName": "shibuya"
+    }
+]

@@ -55,7 +55,6 @@ class CityPlaceViewController: UITableViewController {
         diffableDataSource.apply(snapshot, animatingDifferences: true)
     }
     
-    
     // MARK: ACTION
     
     @objc private func shuffleTapped(_ sender: Any) {

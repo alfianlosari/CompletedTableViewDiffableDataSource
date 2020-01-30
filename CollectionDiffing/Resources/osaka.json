@@ -1,0 +1,14 @@
+[
+    {
+    "uuid": "osaka-dottonburi",
+    "name": "Dottonburi",
+    "description": "Dotonbori is a canalside entertainment district popular with students and after-work drinkers who pack into small bars and izakaya taverns",
+    "imageName": "dottonburi"
+    },
+    {
+    "uuid": "osaka-universal-studio",
+    "name": "Universal Studio",
+    "description": "Universal Studios Japan, located in Osaka, is one of six Universal Studios theme parks, owned and operated by USJ Co., Ltd., which is wholly owned by NBCUniversal",
+    "imageName": "osaka_universal"
+    }
+]

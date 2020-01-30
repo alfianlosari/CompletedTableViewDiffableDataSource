@@ -17,6 +17,10 @@
 		8B784A8823C9D0BE00005A74 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B784A8723C9D0BE00005A74 /* City.swift */; };
 		8B784A8F23C9D42500005A74 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B784A8D23C9D42500005A74 /* PlaceTableViewCell.swift */; };
 		8B784A9023C9D42500005A74 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B784A8E23C9D42500005A74 /* PlaceTableViewCell.xib */; };
+		8BD4188723E3205A0099E8C7 /* tokyo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4188423E3205A0099E8C7 /* tokyo.json */; };
+		8BD4188823E3205A0099E8C7 /* kyoto.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4188523E3205A0099E8C7 /* kyoto.json */; };
+		8BD4188923E3205A0099E8C7 /* osaka.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4188623E3205A0099E8C7 /* osaka.json */; };
+		8BD4188C23E320790099E8C7 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4188B23E320790099E8C7 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		8B784A8723C9D0BE00005A74 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		8B784A8D23C9D42500005A74 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		8B784A8E23C9D42500005A74 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		8BD4188423E3205A0099E8C7 /* tokyo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tokyo.json; sourceTree = "<group>"; };
+		8BD4188523E3205A0099E8C7 /* kyoto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kyoto.json; sourceTree = "<group>"; };
+		8BD4188623E3205A0099E8C7 /* osaka.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = osaka.json; sourceTree = "<group>"; };
+		8BD4188B23E320790099E8C7 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,9 @@
 				8B784A7C23C9C49100005A74 /* Assets.xcassets */,
 				8B784A7E23C9C49100005A74 /* LaunchScreen.storyboard */,
 				8B784A8123C9C49100005A74 /* Info.plist */,
+				8BD4188523E3205A0099E8C7 /* kyoto.json */,
+				8BD4188623E3205A0099E8C7 /* osaka.json */,
+				8BD4188423E3205A0099E8C7 /* tokyo.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -96,11 +107,20 @@
 				8B784A7323C9C49000005A74 /* AppDelegate.swift */,
 				8B784A7523C9C49000005A74 /* SceneDelegate.swift */,
 				8B784A7723C9C49000005A74 /* CityPlaceViewController.swift */,
+				8BD4188A23E3205E0099E8C7 /* Extensions */,
 				8B36520223DD4A980041CF8D /* Views */,
 				8B36520323DD4ADF0041CF8D /* Models */,
 				8B36520623DD4D690041CF8D /* Resources */,
 			);
 			path = CollectionDiffing;
+			sourceTree = "<group>";
+		};
+		8BD4188A23E3205E0099E8C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8BD4188B23E320790099E8C7 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD4188723E3205A0099E8C7 /* tokyo.json in Resources */,
 				8B784A8023C9C49100005A74 /* LaunchScreen.storyboard in Resources */,
 				8B784A7D23C9C49100005A74 /* Assets.xcassets in Resources */,
 				8B784A7B23C9C49000005A74 /* Main.storyboard in Resources */,
+				8BD4188923E3205A0099E8C7 /* osaka.json in Resources */,
+				8BD4188823E3205A0099E8C7 /* kyoto.json in Resources */,
 				8B784A9023C9D42500005A74 /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B784A7823C9C49000005A74 /* CityPlaceViewController.swift in Sources */,
+				8BD4188C23E320790099E8C7 /* Bundle+Extension.swift in Sources */,
 				8B784A8823C9D0BE00005A74 /* City.swift in Sources */,
 				8B784A7423C9C49000005A74 /* AppDelegate.swift in Sources */,
 				8B36520523DD4C980041CF8D /* Place.swift in Sources */,
@@ -256,6 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = CollectionDiffing/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -310,6 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = CollectionDiffing/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -325,12 +351,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = CollectionDiffing/Info.plist;
+				INFOPLIST_FILE = CollectionDiffing/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.CollectionDiffing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -343,12 +371,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = CollectionDiffing/Info.plist;
+				INFOPLIST_FILE = CollectionDiffing/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.CollectionDiffing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

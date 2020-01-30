@@ -1,0 +1,14 @@
+[
+    {
+    "uuid": "kyoto-fushimi-inari",
+    "name": "Fushimi Inari",
+    "description": "Fushimi Inari-taisha is the head shrine of the kami Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan",
+    "imageName": "fushimi_inari"
+    },
+    {
+    "uuid": "kyoto-arashiyama",
+    "name": "Arashiyama",
+    "description": "Arashiyama is a district on the western outskirts of Kyoto, Japan. It also refers to the mountain across the Ōi River, which forms a backdrop to the district",
+    "imageName": "arashiyama"
+    }
+]
