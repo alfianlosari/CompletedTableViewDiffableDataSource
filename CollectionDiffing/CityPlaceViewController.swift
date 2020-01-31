@@ -25,7 +25,7 @@ class CityPlaceViewController: UITableViewController {
         
         setupNavigationItems()
         setupTableView()
-        applySnapshot()
+        buildAndApplySnapshot()
     }
     
     // MARK: SETUP
@@ -45,7 +45,7 @@ class CityPlaceViewController: UITableViewController {
     
     // MARK: Helper Method
     
-    private func applySnapshot() {
+    private func buildAndApplySnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<City, Place>()
         citiesWithPlaces.forEach { (landscapes) in
             let (landscape, places) = landscapes
@@ -62,7 +62,7 @@ class CityPlaceViewController: UITableViewController {
             ($0.city, $0.places.shuffled())
         }.shuffled()
         
-        applySnapshot()
+        buildAndApplySnapshot()
     }
 
 }

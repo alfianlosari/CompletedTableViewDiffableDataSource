@@ -8,11 +8,21 @@
 
 import Foundation
 
-struct Place: Decodable, Hashable {
+struct Place: Decodable {
     let uuid: String
     let name: String
     let description: String
     let imageName: String
+}
+
+extension Place: Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(uuid)
+        hasher.combine(name)
+        hasher.combine(description)
+        hasher.combine(imageName)
+    }
 }
 
 extension Array where Element == Place {

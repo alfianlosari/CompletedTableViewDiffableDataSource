@@ -15,8 +15,9 @@ enum City: String {
 }
 
 extension City {
+    
     static var stubCitiesWithPlaces: [(city: City, places: [Place])] {
-        return [
+        [
             (.osaka, .osakaStubs),
             (.kyoto, .kyotoStubs),
             (.tokyo, .tokyoStubs)
